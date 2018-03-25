@@ -16,7 +16,7 @@ public class Signup extends Activity {
         setContentView(R.layout.signup);
     }
 
-    public void onUserSignUp (View v)
+    public void OnUserSignUpClick (View v)
     {
         if(v.getId() == R.id.BuserSignUp)
         {
