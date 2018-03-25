@@ -13,4 +13,10 @@ public class Login_Page extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
     }
+
+
+
+
 }
+
+
