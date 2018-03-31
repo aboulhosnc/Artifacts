@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 /**
  * Created by michaelpoblacion1 on 3/24/18.
 import android.os.Bundle;
@@ -15,11 +18,16 @@ import android.os.Bundle;
 
 public class HomeScreen extends Activity {
 
+    private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
+
+        mAuth = FirebaseAuth.getInstance();
     }
+
 
     public void onArtifactsClick(View view) {
         Intent i = new Intent(HomeScreen.this, ArtifactsPage.class);

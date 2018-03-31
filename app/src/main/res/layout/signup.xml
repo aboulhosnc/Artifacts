@@ -57,7 +57,14 @@
         android:id="@+id/BuserSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="OnUserSignUpClick"
+        android:onClick="signUpClick"
         android:text="Signup" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToMain"
+        android:text="Cancel" />
 
 </LinearLayout>
