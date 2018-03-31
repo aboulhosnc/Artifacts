@@ -15,7 +15,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="142dp" />
+        android:layout_height="280dp" />
 
     <Button
         android:id="@+id/BLogin"

@@ -17,12 +17,23 @@ public class Login_Page extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
     }
-    public void onUserLoginClick(View view){
+
+
+    public void onUserLoginClick(View v){
+
+        if(v.getId() == R.id.BuserLogin)
+        {
+            Intent i = new Intent(Login_Page.this, HomeScreen.class);
+            startActivity(i);
+
+        }
 
         //IF-ELSE STATEMENT TO BE IMPLEMENTED USER IS SIGNED UP AND MATCHES DATABASE validateLogin()
-        Intent i = new Intent(Login_Page.this, HomeScreen.class);
-        startActivity(i);
+
 
     }
     //public boolean validateLogin();
+
 }
+
+

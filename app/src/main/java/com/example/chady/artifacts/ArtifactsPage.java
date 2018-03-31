@@ -7,6 +7,10 @@ import android.view.View;
 
 /**
  * Created by michaelpoblacion1 on 3/24/18.
+import android.os.Bundle;
+
+/**
+ * Created by Chady on 3/25/2018.
  */
 
 public class ArtifactsPage extends Activity {
@@ -20,5 +24,7 @@ public class ArtifactsPage extends Activity {
     public void homeButtonClicked(View view) {
         Intent i = new Intent(ArtifactsPage.this, HomeScreen.class);
         startActivity(i);
+      //This added?
+        setContentView(R.layout.artifactspage);
     }
 }
